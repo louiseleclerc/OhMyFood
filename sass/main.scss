@@ -1,2 +1,22 @@
+@import
+    'abstracts/variables',
+    'abstracts/functions',
+    'abstracts/mixins';
 
+@import
+    'base/base',
+    'base/fonts',
+    'base/typography';
+
+@import 
+    'components/buttons',
+    'components/cards';
+
+@import
+    'layout/header',
+    'layout/footer';
+
+@import
+    'pages/home';
+    
   

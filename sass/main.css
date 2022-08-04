@@ -1,1 +1,157 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Roboto", "sans-serif";
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin-bottom: 3px;
+}
+
+.btn {
+  padding: 15px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  border-radius: 50px;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+.card img {
+  width: 300px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.card .new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #278870;
+  background-color: #99E2D0;
+  border: solid 0.5px #278870;
+}
+.card .card_text {
+  margin: 8px;
+  font-size: 12px;
+  color: black;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  height: 30px;
+}
+
+footer {
+  padding: 15px;
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 100;
+  font-size: 16px;
+}
+footer ul {
+  list-style-type: none;
+  font-size: 13px;
+}
+footer li {
+  margin-top: 5px;
+}
+
+.location {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 0px -2px 6px -2px rgba(0, 0, 0, 0.35);
+}
+.location * {
+  font-weight: 600;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  padding: 45px 35px;
+  background-color: rgb(245, 245, 245);
+}
+.section1 .btn {
+  margin-top: 15px;
+}
+
+.section2 {
+  position: relative;
+  padding: 45px 15px;
+  background-color: white;
+}
+.section2 .section2_bloc {
+  margin-left: 10px;
+}
+.section2 .section2_element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 22px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px 4px rgba(0, 0, 0, 0.1);
+}
+.section2 .round {
+  position: absolute;
+  left: 15px;
+  padding: 4px 7px;
+  color: white;
+  font-size: 13px;
+  background-color: #9356DC;
+  border-radius: 50%;
+}
+.section2 .element_text {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.section3 {
+  padding: 45px 15px;
+  background-color: rgb(245, 245, 245);
+}
+.section3 .section3_bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}/*# sourceMappingURL=main.css.map */
