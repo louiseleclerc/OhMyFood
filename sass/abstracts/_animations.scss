@@ -1,0 +1,12 @@
+@keyframes disappear{
+    to{
+        z-index: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes loading{
+    to{
+        transform: rotate(1turn);
+    }
+}

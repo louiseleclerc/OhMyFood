@@ -1,4 +1,5 @@
 @import
+    'abstracts/_animations.scss',
     'abstracts/variables',
     'abstracts/functions',
     'abstracts/mixins';
@@ -9,6 +10,7 @@
     'base/typography';
 
 @import 
+    'components/icons',
     'components/buttons',
     'components/cards';
 
