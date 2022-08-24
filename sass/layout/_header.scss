@@ -1,9 +1,9 @@
 header{
-    width: 100%;
+    position: relative;
     height: 60px;
     @include center;
 
     img{
-        height: 27px;
+        height: 30px;
     }
 }

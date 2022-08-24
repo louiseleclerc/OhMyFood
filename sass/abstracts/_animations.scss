@@ -1,12 +1,30 @@
-@keyframes disappear{
+@keyframes anim_disparition{
     to{
-        z-index: 0;
+        z-index: -1;
         opacity: 0;
     }
 }
 
-@keyframes loading{
+@keyframes anim_turn{
     to{
         transform: rotate(1turn);
+    }
+}
+
+@keyframes anim_like{
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes anim_meal{
+
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
     }
 }

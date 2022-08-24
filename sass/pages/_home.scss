@@ -1,35 +1,10 @@
-.loader{
-    position: fixed;
-    z-index: 3;
-    @include center;
-    width: 100%;
-    height: 100vh;
-    opacity: 0.9;
-    background: white;
-    animation: disappear 1s 1.5s linear forwards;
-
-    .loader_element{
-        width: 60px;
-        height: 60px;
-        border-top: solid 5px $primary-color;
-        border-right: solid 5px $secondary-color;
-        border-bottom: solid 5px $tertiary-color;
-        border-left: solid 5px white;
-        border-radius: 50%;
-        animation: loading 2.5s forwards;
-    }
-}
 
 .location{
     height: 50px;
     @include center;
-    background-color: rgb(233, 233, 233);
+    gap: 10px;
+    background-color: $bg-dark;
     box-shadow: 0px -2px 6px -2px rgba(0,0,0,0.35);
-
-    *{
-        font-weight: 600;
-        padding-right: 20px;
-    }
 }
 
 .reservation{
@@ -37,19 +12,15 @@
     flex-direction: column;
     padding: 40px 0 50px;
     text-align: center;
-    background-color: rgb(245, 245, 245);
+    background-color: $bg-medium;
 
     .reservation_text{
         max-width: 70%;
         min-width: 305px;
-        font-size: 18px;
-        font-weight: 100;
     }
-
     h1{
         margin-bottom: 15px;
     }
-
     .btn{
         margin-top: 30px;
     }
@@ -57,7 +28,7 @@
 
 .operation{
     padding: 45px 15px;
-    background-color: white;
+    background-color: $bg-light;
 
     .operation_block{
         margin-left: 10px;
@@ -74,7 +45,7 @@
         gap: 15px;
         margin-top: 20px;
         padding: 25px;
-        background-color: rgb(245, 245, 245);
+        background-color: $bg-medium;
         border-radius: 20px;
         box-shadow: 0px 4px 12px 4px rgba(0,0,0,0.1);
 
@@ -82,32 +53,22 @@
             width: 30%;
         }
     }
-
     .round{
         position: absolute;
         left: -10px;
         padding: 4px 7px;
-        color: white;
-        font-size: 13px;
         background-color: $primary-color;
         border-radius: 50%;
     }
-
-    .element_text{
-        font-weight: bold;
-        font-size: 14px;
-    }
-
-    i{
-        font-size: 19px;
-        color: grey;
-        margin: 0 10px;
-    }
 }
+
 .restaurants{
-    padding: 45px 15px;
-    background-color: rgb(245, 245, 245);
-    
+    padding: 50px 20px;
+    background-color: $bg-medium;
+
+    h2{
+        margin-bottom: 20px;
+    }
     .restaurants_block{
         @include center;
         flex-direction: column;
@@ -121,16 +82,6 @@
         @media (min-width: 1024px){
             gap: 0;
             justify-content: space-between;
-        }
-    }
-
-    .heart{
-        display: flex;
-
-        &:hover{
-            .icon_fullheart{
-                opacity: 1;
-            }
         }
     }
 }

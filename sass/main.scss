@@ -1,7 +1,6 @@
 @import
     'abstracts/_animations',
     'abstracts/variables',
-    'abstracts/functions',
     'abstracts/mixins';
 
 @import
@@ -11,7 +10,8 @@
 @import 
     'components/icons',
     'components/buttons',
-    'components/cards';
+    'components/cards',
+    'components/loaders';
 
 @import
     'layout/header',

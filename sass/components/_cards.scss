@@ -1,10 +1,9 @@
 .card{
     position: relative;
     width: 90%;
-    background-color: white;
+    background-color: $bg-light;
     border-radius: 15px;
     box-shadow: 0px 4px 12px 4px rgba(0,0,0,0.1);
-    text-decoration: none;
 
     @media (min-width: 768px){
         width: 45%;
@@ -15,7 +14,7 @@
 
     img{
         width: 100%;
-        height: 180px;
+        height: 170px;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
@@ -24,19 +23,24 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        padding: 5px;
-        font-size: 11px;
-        font-weight: bold;
-        color: darken($color: $tertiary-color, $amount: 40);
+        padding: 6px 12px;
         background-color: $tertiary-color;
-        border: solid 0.5px darken($color: $tertiary-color, $amount: 40);
+        box-shadow: 0px 4px 12px 4px rgba(0,0,0,0.1);
+        border-radius: 3px;
     }
 
     .card_text{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include space-between;
         margin: 10px 22px 14px 10px;
-        color: black;
+    }
+
+    .heart{
+        display: flex;
+
+        &:hover{
+             .icon_fullheart{
+                animation: anim_like 0.4s ease-out forwards;
+            }
+        }
     }
 }

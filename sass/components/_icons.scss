@@ -1,8 +1,15 @@
+.operation{
+    * i{
+        font-size: 19px;
+        color: grey;
+        margin: 0 10px;
+    }
+}
+
 .icon_heart{
     position: relative;
     font-size: 23px;
 }
-
 .icon_fullheart{
     position: absolute;
     font-size: 23px;
@@ -13,5 +20,31 @@
         background-clip:text;
         -webkit-background-clip:text;
         color:transparent;
+    }
+}
+
+.icon_arrow{
+    position: absolute;
+    left: 20px;
+
+    .fa-arrow-left{
+        font-size: 20px;
+    }
+}
+
+.icon_titleheart{
+    font-size: 27px;
+}
+
+.icon_selectedmeal{
+    .fa-circle-check{
+        color: white;
+        animation: anim_turn 0.5s forwards;
+    }
+}
+
+footer{
+    * i{
+        width: 5px;
     }
 }
