@@ -15,8 +15,11 @@
     background-color: $bg-medium;
 
     .reservation_text{
-        max-width: 70%;
-        min-width: 305px;
+        max-width: 320px;
+
+        @media (min-width: 768px){
+            max-width: 70%;
+        }
     }
     h1{
         margin-bottom: 15px;
@@ -52,6 +55,9 @@
         @media (min-width: 1024px){
             width: 30%;
         }
+    }
+    .operation_element_colored{
+        background-color: lighten($primary-color, $amount: 35);
     }
     .round{
         position: absolute;

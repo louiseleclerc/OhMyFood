@@ -84,7 +84,7 @@ a {
   color: white;
 }
 .operation .element_text {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -141,6 +141,9 @@ footer ul {
   color: grey;
   margin: 0 10px;
 }
+.operation .operation_icon_colored {
+  color: #9356DC;
+}
 
 .icon_heart {
   position: relative;
@@ -152,7 +155,7 @@ footer ul {
   font-size: 23px;
   opacity: 0;
 }
-.icon_fullheart .fa-solid {
+.icon_fullheart .fa-solid.fa-heart {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
@@ -187,9 +190,12 @@ footer * i {
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 50px;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
-.btn:hover {
+.btn:hover, .btn:active {
   cursor: pointer;
+  opacity: 0.7;
 }
 
 .card {
@@ -309,8 +315,12 @@ footer li {
   background-color: rgb(245, 245, 245);
 }
 .reservation .reservation_text {
-  max-width: 70%;
-  min-width: 305px;
+  max-width: 320px;
+}
+@media (min-width: 768px) {
+  .reservation .reservation_text {
+    max-width: 70%;
+  }
 }
 .reservation h1 {
   margin-bottom: 15px;
@@ -349,6 +359,9 @@ footer li {
   .operation .operation_element {
     width: 30%;
   }
+}
+.operation .operation_element_colored {
+  background-color: #f2eafb;
 }
 .operation .round {
   position: absolute;
