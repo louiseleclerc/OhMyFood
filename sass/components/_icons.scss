@@ -1,21 +1,21 @@
-.operation{
-    * i{
+.operation_element{
+    i{
         font-size: 19px;
         color: grey;
         margin: 0 10px;
     }
-    .operation_icon_colored{
-        color: $primary-color;
+    &:hover, &:focus{
+        i{
+            color: $primary-color;
+        }
     }
 }
 
 .icon_heart{
     position: relative;
-    font-size: 23px;
 }
 .icon_fullheart{
     position: absolute;
-    font-size: 23px;
     opacity: 0;
 
     .fa-solid.fa-heart{
@@ -33,10 +33,6 @@
     .fa-arrow-left{
         font-size: 20px;
     }
-}
-
-.icon_titleheart{
-    font-size: 27px;
 }
 
 .icon_selectedmeal{

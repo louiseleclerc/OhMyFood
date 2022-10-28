@@ -12,3 +12,12 @@
         opacity: 0.7;
     }
 }
+.heart{
+    display: flex;
+
+    &:hover{
+         .icon_fullheart{
+            animation: anim_like 0.4s ease-out forwards;
+        }
+    }
+}

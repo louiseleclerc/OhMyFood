@@ -55,9 +55,10 @@
         @media (min-width: 1024px){
             width: 30%;
         }
-    }
-    .operation_element_colored{
-        background-color: lighten($primary-color, $amount: 35);
+
+        &:hover, &:focus{
+            background-color: lighten($primary-color, $amount: 35);
+        }
     }
     .round{
         position: absolute;
