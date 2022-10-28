@@ -198,6 +198,7 @@ footer * i {
 
 .heart {
   display: flex;
+  cursor: pointer;
 }
 .heart:hover .icon_fullheart {
   -webkit-animation: anim_like 0.4s ease-out forwards;
@@ -353,6 +354,7 @@ footer li {
   background-color: rgb(245, 245, 245);
   border-radius: 20px;
   box-shadow: 0px 4px 12px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   .operation .operation_element {
