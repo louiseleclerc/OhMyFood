@@ -32,7 +32,6 @@
 }
 @-webkit-keyframes anim_meal {
   0% {
-    opacity: 0;
     transform: translateY(30px);
   }
   100% {
@@ -42,7 +41,6 @@
 }
 @keyframes anim_meal {
   0% {
-    opacity: 0;
     transform: translateY(30px);
   }
   100% {
@@ -93,6 +91,9 @@ a {
   font-weight: 500;
   color: #278870;
 }
+.card .card_text {
+  font-size: 23px;
+}
 .card h3 {
   font-size: 16px;
 }
@@ -101,6 +102,9 @@ a {
   font-weight: 300;
 }
 
+.menu .menu_title {
+  font-size: 28px;
+}
 .menu h1 {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
@@ -136,23 +140,21 @@ footer ul {
   font-size: 14px;
 }
 
-.operation * i {
+.operation_element i {
   font-size: 19px;
   color: grey;
   margin: 0 10px;
 }
-.operation .operation_icon_colored {
+.operation_element:hover i, .operation_element:focus i {
   color: #9356DC;
 }
 
 .icon_heart {
   position: relative;
-  font-size: 23px;
 }
 
 .icon_fullheart {
   position: absolute;
-  font-size: 23px;
   opacity: 0;
 }
 .icon_fullheart .fa-solid.fa-heart {
@@ -168,10 +170,6 @@ footer ul {
 }
 .icon_arrow .fa-arrow-left {
   font-size: 20px;
-}
-
-.icon_titleheart {
-  font-size: 27px;
 }
 
 .icon_selectedmeal .fa-circle-check {
@@ -196,6 +194,14 @@ footer * i {
 .btn:hover, .btn:active {
   cursor: pointer;
   opacity: 0.7;
+}
+
+.heart {
+  display: flex;
+}
+.heart:hover .icon_fullheart {
+  -webkit-animation: anim_like 0.4s ease-out forwards;
+          animation: anim_like 0.4s ease-out forwards;
 }
 
 .card {
@@ -236,13 +242,6 @@ footer * i {
   justify-content: space-between;
   align-items: center;
   margin: 10px 22px 14px 10px;
-}
-.card .heart {
-  display: flex;
-}
-.card .heart:hover .icon_fullheart {
-  -webkit-animation: anim_like 0.4s ease-out forwards;
-          animation: anim_like 0.4s ease-out forwards;
 }
 
 .loader {
@@ -360,7 +359,7 @@ footer li {
     width: 30%;
   }
 }
-.operation .operation_element_colored {
+.operation .operation_element:hover, .operation .operation_element:focus {
   background-color: #f2eafb;
 }
 .operation .round {
@@ -472,9 +471,16 @@ footer li {
   padding: 12px;
   border-radius: 20px;
   box-shadow: 0px 4px 12px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0;
   cursor: pointer;
-  -webkit-animation: anim_meal 1s ease-in-out;
-          animation: anim_meal 1s ease-in-out;
+  -webkit-animation-name: anim_meal;
+          animation-name: anim_meal;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .menu_meal:hover .meal_content {
   width: 80%;
@@ -498,6 +504,21 @@ footer li {
 }
 .menu_meal .meal_price {
   margin-top: auto;
+}
+
+.menu_meal:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.menu_meal:nth-child(3) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.menu_meal:nth-child(4) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 .selected_meal {
