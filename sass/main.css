@@ -510,18 +510,23 @@ footer li {
 }
 
 .menu_meal:nth-child(2) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.menu_meal:nth-child(3) {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
-.menu_meal:nth-child(3) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+.menu_meal:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
-.menu_meal:nth-child(4) {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+.menu_meal:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .selected_meal {
