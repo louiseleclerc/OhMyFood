@@ -7,7 +7,7 @@
     opacity: 1;
     transition: opacity 0.5s;
 
-    &:hover, &:active{
+    &:hover{
         cursor: pointer;
         opacity: 0.7;
     }

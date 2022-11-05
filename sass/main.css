@@ -145,7 +145,7 @@ footer ul {
   color: grey;
   margin: 0 10px;
 }
-.operation_element:hover i, .operation_element:focus i {
+.operation_element:hover i {
   color: #9356DC;
 }
 
@@ -191,7 +191,7 @@ footer * i {
   opacity: 1;
   transition: opacity 0.5s;
 }
-.btn:hover, .btn:active {
+.btn:hover {
   cursor: pointer;
   opacity: 0.7;
 }
@@ -361,7 +361,7 @@ footer li {
     width: 30%;
   }
 }
-.operation .operation_element:hover, .operation .operation_element:focus {
+.operation .operation_element:hover {
   background-color: #f2eafb;
 }
 .operation .round {

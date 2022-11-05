@@ -57,7 +57,7 @@
             width: 30%;
         }
 
-        &:hover, &:focus{
+        &:hover{
             background-color: lighten($primary-color, $amount: 35);
         }
     }
